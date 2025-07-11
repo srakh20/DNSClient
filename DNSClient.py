@@ -2,7 +2,7 @@ import dns.resolver
 import socket
 
 # Set the IP address of the local DNS server and a public DNS server
-local_host_ip = socket.gethostbyname(socket.gethostname())
+local_host_ip = "192.168.1.227"
 real_name_server = "8.8.8.8" # Research public DNS servers to find a valid DNS server IP address to use
 
 
@@ -56,7 +56,8 @@ def exfiltrate_info(domain,question_type): # testing method for part 2
 
         
 if __name__ == '__main__':
-    
+
+    print(local_host_ip)
     # Set the type of DNS query to be performed
     question_type = 'A'
 
