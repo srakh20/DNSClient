@@ -2,7 +2,7 @@ import dns.resolver
 import socket
 
 # Set the IP address of the local DNS server and a public DNS server
-local_host_ip = "192.168.1.227"
+local_host_ip = "192.168.1.227 53"
 real_name_server = "8.8.8.8" # Research public DNS servers to find a valid DNS server IP address to use
 
 
